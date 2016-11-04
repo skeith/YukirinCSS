@@ -1,0 +1,118 @@
+.app, .app::after {
+	background-image: url("https://i.imgur.com/z5cHCk5.jpg");
+	/*-webkit-animation: opacityBg 20s ease-in-out infinite;*/
+	background-size: cover !important;
+	/* animations are very CPU intensive. possible fix? */
+	/* http://stackoverflow.com/questions/13176746/css-keyframe-animation-cpu-usage-is-high-should-it-be-this-way */
+	-webkit-transform: translateZ(0);
+}
+
+@-webkit-keyframes opacityBg {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+/* TRANSPARENT THING */
+
+.flex-horizontal {
+	background-color: rgba(54, 57, 62, .7);
+}
+
+.guilds-wrapper {
+	/*background: rgba(30, 33, 36, .85);*/
+	background: rgba(30, 33, 36, .6);
+
+}
+
+/* channel-bar */
+/* v1: rgba(28, 30, 34, .0) */
+.channels-wrap {
+	background: rgba(28, 30, 34, .0);
+	background-position: 0px 0px;
+}
+.channels-wrap:hover {
+	background: rgba(28, 30, 34, .0);
+	/*background-image: url("https://imgur.com/RG03PyX.png");
+	background-position: 100px 0px;*/
+}
+/* #2e3136 */
+.guild-channels {
+	/*background: rgba(46, 49, 54, .8);*/
+	background: rgba(46, 49, 54, .35);
+}
+.guild-channels:hover {
+	background: rgba(46, 49, 54, .7);
+}
+/* #2e3136 */
+.guild-header header {
+	/*background: rgba(46, 49, 54, .9);*/
+	background: rgba(46, 49, 54, .6);
+}
+.guild-channels-wrapper:hover .guild-header header {
+	background: rgba(46, 49, 54, .7);
+}
+/* -- #282b30 */
+.guild-channels-wrapper:hover .guild-header header:hover, .guild-header.popout-open header {
+	background: rgba(40, 43, 48, .9);
+}
+/* -webkit-linear-gradient(left,#282b30 85%,#2e3136) */
+/* linear-gradient(to right,#282b30 85%,#2e3136) */
+.guild-channels .channel-text.selected {
+	background: -webkit-linear-gradient(left, rgba(46, 49, 54, 0.7), rgba(46, 49, 54, 0.95), rgba(46, 49, 54, 0.98), rgba(46, 49, 54, 1.0));
+}
+/* #282b30 */
+.channels-wrap .account {
+	/*background: rgba(40, 43, 48, .7);*/
+	background: rgba(40, 43, 48, .4);
+}
+.channels-wrap:hover .account {
+	background: rgba(40, 43, 48, .6);
+	background: linear-gradient(right, rgba(40, 43, 48, .0) 85%, rgba(46, 49, 54, 1.0));
+}
+
+.theme-dark .chat {
+	background-color: rgba(54, 57, 62, .0);
+}
+/* #36393e */
+.theme-dark .chat .title-wrap {
+	background-color: rgba(54, 57, 62, .8);
+}
+/* #36393e */
+.theme-dark .chat>.content {
+	background-color: rgba(54, 57, 62, .0);
+}
+/* #36393e */
+.theme-dark .messages-wrapper {
+	background-color: rgba(54, 57, 62, .0);
+}
+/* #1e2124 */
+/* #36393e :border */
+.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
+	background-color: rgba(30, 33, 36, .5);
+	border-color: rgba(54, 57, 62, .5);
+}
+/* #2e3136 */
+/* #36393e :border */
+.theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece, .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece {
+	background-color: rgba(46, 49, 54, .2);
+	border-color: rgba(54, 57, 62, .2);
+}
+
+/* member-bar */
+/* v1: rgba(46, 49, 54, 1.0) */
+.theme-dark .channel-members {
+	background: rgba(46, 49, 54, .4);
+/*	background: -webkit-linear-gradient(left, rgba(46, 49, 54, 0.7), rgba(46, 49, 54, 0.95), rgba(46, 49, 54, 0.98), rgba(46, 49, 54, 1.0));
+	opacity: 0.5;*/
+	-webkit-box-shadow: -2px 0px 1px rgba(46, 49, 54, 0.4);
+
+}
+.theme-dark .channel-members:hover {
+	background: rgba(46, 49, 54, .9);
+	/*opacity: 1;*/
+}
+
+.theme-dark .chat form .typing {
+	background-color: rgba(54, 57, 62, .0);
+}
+
