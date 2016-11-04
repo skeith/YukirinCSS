@@ -1,3 +1,3 @@
-## YukirinCSS
+# YukirinCSS
 
 CSS for beautifuldiscord
