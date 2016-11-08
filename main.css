@@ -2,6 +2,7 @@
 	background-image: url("https://i.imgur.com/wTswFL5.jpg"); 
 	/*https://i.yukirin.xyz/tumblr_o9p1i8XdjV1t1dwzro1_400.jpg*/
 	/*https://i.imgur.com/wTswFL5.jpg*/
+	/*file:///D:/Labs/Discord/YukirinCSS/images/yukicrbd1.jpg*/
 	/*-webkit-animation: opacityBg 20s ease-in-out infinite;*/
 	background-size: cover !important;
 	/* animations are very CPU intensive. possible fix? */
@@ -116,4 +117,30 @@
 
 .theme-dark .chat form .typing {
 	background-color: rgba(54, 57, 62, .0);
+}
+
+.tooltip {
+	background-color: #FF69B4;
+}
+.tooltip.tooltip-right::after {
+	border-right-color: #FF69B4;
+}
+.tooltip.tooltip-bottom::after {
+	border-bottom-color: #FF69B4;
+}
+.tooltip.tooltip-left::after {
+	border-left-color: #FF69B4;
+}
+.tooltip.tooltip-top::after {
+	border-top-color: #FF69B4;
+}
+
+.message-group-blocked {
+	/*margin: 0 10px;
+	height: 10px ;*/
+	display: none;
+}
+
+.chat .divider.divider-red span {
+    color: #FF69B4 !important;
 }
