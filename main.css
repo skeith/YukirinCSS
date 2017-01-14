@@ -143,4 +143,40 @@
 
 .chat .divider.divider-red span {
     color: #FF69B4 !important;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.chat .divider.divider-red span:hover,
+.chat .divider.divider-red span:focus,
+.chat .divider.divider-red span:active {
+   -webkit-transform: scale(1.1) rotate(4deg);
+   transform: scale(1.1) rotate(4deg);
+}
+
+.chat .divider.divider span {
+    color: #FF69B4 !important;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.chat .divider.divider span:hover,
+.chat .divider.divider span:focus,
+.chat .divider.divider span:active {
+   -webkit-transform: scale(1.1) rotate(4deg);
+   transform: scale(1.1) rotate(4deg);
 }
