@@ -1,5 +1,5 @@
-.app, .app::after {
-	background-image: url("https://i.imgur.com/wTswFL5.jpg"); 
+.app, .app::after, .callout-backdrop {
+	background-image: url("https://i.imgur.com/wTswFL5.jpg") !important; 
 	/*https://i.yukirin.xyz/tumblr_o9p1i8XdjV1t1dwzro1_400.jpg*/
 	/*https://i.imgur.com/wTswFL5.jpg*/
 	/*file:///D:/Labs/Discord/YukirinCSS/images/yukicrbd1.jpg*/
@@ -180,3 +180,9 @@
    -webkit-transform: scale(1.1) rotate(4deg);
    transform: scale(1.1) rotate(4deg);
 }
+
+textarea {
+    background:transparent !important;
+}
+
+.theme-dark .layers { background: transparent !important; }
