@@ -1,13 +1,39 @@
-.app, .app::after, .callout-backdrop {
+.app.flex-vertical.theme-dark {
+    background-image: url("https://i.imgur.com/wTswFL5.jpg") !important; 
+    /*
+    https://i.imgur.com/VAqLc0P.jpg
+    https://yukirin.xyz/splash48/
+    https://i.imgur.com/wTswFL5.jpg
+    https://unsplash.it/1680/1050/?random
+    file:///D:/Labs/Discord/YukirinCSS/images/yukicrbd1.jpg
+    */
+    background-size: cover !important;
+}
+.theme-dark .layer, .theme-dark .layers {
+    background-image: url("https://i.imgur.com/wTswFL5.jpg") !important; 
+    /*
+    https://i.imgur.com/VAqLc0P.jpg
+    https://yukirin.xyz/splash48/
+    https://i.imgur.com/wTswFL5.jpg
+    https://unsplash.it/1680/1050/?random
+    file:///D:/Labs/Discord/YukirinCSS/images/yukicrbd1.jpg
+    */
+    background-size: cover !important; 
+    /*-webkit-filter: brightness(75%);*/   
+}
+
+.callout-backdrop, .theme-dark .layers {
 	background-image: url("https://i.imgur.com/wTswFL5.jpg") !important; 
-	/*https://i.yukirin.xyz/tumblr_o9p1i8XdjV1t1dwzro1_400.jpg*/
-	/*https://i.imgur.com/wTswFL5.jpg*/
-	/*file:///D:/Labs/Discord/YukirinCSS/images/yukicrbd1.jpg*/
-	/*-webkit-animation: opacityBg 20s ease-in-out infinite;*/
+	/*
+    https://i.imgur.com/VAqLc0P.jpg
+    https://yukirin.xyz/splash48/
+	https://i.imgur.com/wTswFL5.jpg
+    https://unsplash.it/1680/1050/?random
+	file:///D:/Labs/Discord/YukirinCSS/images/yukicrbd1.jpg
+    */
 	background-size: cover !important;
-	/* animations are very CPU intensive. possible fix? */
-	/* http://stackoverflow.com/questions/13176746/css-keyframe-animation-cpu-usage-is-high-should-it-be-this-way */
-	-webkit-transform: translateZ(0);
+
+    /*-webkit-filter: brightness(75%);*/
 }
 
 @-webkit-keyframes opacityBg {
@@ -39,24 +65,32 @@
 	background-position: 100px 0px;*/
 }
 /* #2e3136 */
-.guild-channels {
+.guild-channels, .private-channels {
 	/*background: rgba(46, 49, 54, .8);*/
 	background: rgba(46, 49, 54, .35);
 }
-.guild-channels:hover {
+.guild-channels:hover, .private-channels:hover {
 	background: rgba(46, 49, 54, .7);
 }
 /* #2e3136 */
-.guild-header header {
+.guild-header header, .search-bar {
 	/*background: rgba(46, 49, 54, .9);*/
 	background: rgba(46, 49, 54, .6);
 }
-.guild-channels-wrapper:hover .guild-header header {
+.guild-channels-wrapper:hover .guild-header header, .private-channels:hover .search-bar {
 	background: rgba(46, 49, 54, .7);
 }
+.search-bar {
+    background: rgba(46, 49, 54, .25);
+}
 /* -- #282b30 */
-.guild-channels-wrapper:hover .guild-header header:hover, .guild-header.popout-open header {
+.guild-channels-wrapper:hover .guild-header header:hover, .guild-header.popout-open header, .private-channels:hover .search-bar:hover {
 	background: rgba(40, 43, 48, .9);
+}
+
+.private-channels:hover .search-bar,
+.private-channels:hover .search-bar:hover {
+    transition: background-color .15s ease;
 }
 /* -webkit-linear-gradient(left,#282b30 85%,#2e3136) */
 /* linear-gradient(to right,#282b30 85%,#2e3136) */
@@ -73,20 +107,31 @@
 	background: linear-gradient(right, rgba(40, 43, 48, .0) 85%, rgba(46, 49, 54, 1.0));
 }
 
-.theme-dark .chat {
+.theme-dark .chat, #friends .friends-table {
 	background-color: rgba(54, 57, 62, .0);
 }
 /* #36393e */
-.theme-dark .chat .title-wrap {
+.theme-dark .chat .title-wrap,
+#friends .friends-header {
 	background-color: rgba(54, 57, 62, .8);
 }
+#friends .friends-header {
+    position: relative;
+}
 /* #36393e */
-.theme-dark .chat>.content {
+.theme-dark .chat .content {
 	background-color: rgba(54, 57, 62, .0);
 }
 /* #36393e */
 .theme-dark .messages-wrapper {
 	background-color: rgba(54, 57, 62, .0);
+    /*margin-top: -56px;*/
+}
+/*.chat .new-messages-bar {
+    top: 56px;
+}*/
+.flex-spacer, #friends {
+    overflow: visible;
 }
 /* #1e2124 */
 /* #36393e :border */
@@ -118,7 +163,17 @@
 .theme-dark .chat form .typing {
 	background-color: rgba(54, 57, 62, .0);
 }
+/*====================*/
+/* CHANNEL LIST */
+.nameSelectedText-32NDX5, .nameSelectedVoice-XpjYTw {
+    color: #FF69B4;
+}
+/* Why is this one not working? */
+.colorSelectedText-3YhFC6 {
+    fill: #FF69B4 !important;
+}
 
+/*====================*/
 .tooltip {
 	background-color: #FF69B4;
 }
