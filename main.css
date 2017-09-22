@@ -168,6 +168,10 @@
 .nameSelectedText-32NDX5, .nameSelectedVoice-XpjYTw {
     color: #FF69B4;
 }
+
+.nameCollapsed-3_ChMu, .nameDefault-Lnjrwm {
+    color: #FF69B4;
+}
 /* Why is this one not working? */
 .colorSelectedText-3YhFC6 {
     fill: #FF69B4 !important;
