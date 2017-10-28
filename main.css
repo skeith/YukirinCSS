@@ -21,11 +21,11 @@
 }*/
 
 .theme-dark .title-qAcLxz {
-    background: rgba(46, 49, 54, .5);
+    background: rgba(46, 49, 54, .8);
 }
 
 .theme-dark .title-qAcLxz:hover {
-    background: rgba(46, 49, 54, .8);
+    background: rgba(46, 49, 54, .9);
 }
 
 .theme-dark .chat form {
@@ -113,7 +113,7 @@
 }*/
 
 .theme-dark .chat .content {
-    background-color: rgba(54, 57, 62, .5);
+    background-color: rgba(54, 57, 62, .7);
 }
 
 .theme-dark .messages-wrapper {
