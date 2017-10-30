@@ -40,10 +40,12 @@
     background: rgba(46, 49, 54, .5);
 }
 
-.scrollerWrap-2uBjct:hover {
+
+/*THIS PART MESSES WITH EMOJI PICKER TOO*/
+/*.scrollerWrap-2uBjct:hover {
     background: rgba(46, 49, 54, .8);
 }
-
+*/
 
 
 /*=====================*/
