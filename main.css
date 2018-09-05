@@ -1,9 +1,12 @@
-.app .layers,
-.app .layers .layer>[class*=container-] {
+/* .theme-dark, [class*=layer-], .theme-dark, [class*=layers-] {
     background-image: url("https://i.imgur.com/wTswFL5.jpg") !important; 
     background-size: cover !important; 
-}
+} */
 
+
+.app [class*=layers-] [class*=layer-]>[class*=container-] {
+    background-color: rgba(54, 57, 62, .1);
+}
 
 @-webkit-keyframes opacityBg {
 	from { opacity: 0; }
@@ -154,8 +157,8 @@
 
 /*====================*/
 /* CHANNEL LIST */
-.nameSelectedText-32NDX5, .nameSelectedVoice-XpjYTw {
-    color: #FF69B4;
+.div[class*=nameConnectText-], [class*=nameConnectVoice-], [class*=nameSelectedText-], [class*=nameSelectedVoice-] {
+    color: #FF69B4 !important;
 }
 
 .nameCollapsed-3_ChMu, .nameDefault-Lnjrwm {
@@ -183,10 +186,50 @@
 	border-top-color: #FF69B4;
 }
 
-.message-group-blocked {
+[class^=messageGroupBlocked-] {
 	/*margin: 0 10px;
 	height: 10px ;*/
 	display: none;
+}
+
+.div[class*=bar-], [class*= unreadBar-] {
+	background-color: rgba(60, 179, 113, .9);
+}
+
+.div[class*=bar-], [class*= unreadBar-]:hover {
+    background-color: rgba(255, 105, 180, .9);
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 300ms;
+    -webkit-animation-duration: 300ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+}
+  
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(2deg);}
+    25% {-webkit-transform: rotate(-2deg);}
+    50% {-webkit-transform: rotate(2deg);}
+    75% {-webkit-transform: rotate(-2deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+
+@-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(1deg);}
+    25% {-ms-transform: rotate(-1deg);}
+    50% {-ms-transform: rotate(1.2deg);}
+    75% {-ms-transform: rotate(-2deg);}
+    100% {-ms-transform: rotate(0deg);}
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(2deg);}
+    25% {transform: rotate(-2deg);}
+    50% {transform: rotate(2deg);}
+    75% {transform: rotate(-2deg);}
+    100% {transform: rotate(0deg);}
 }
 
 .chat .divider.divider-red span {
@@ -209,7 +252,8 @@
    transform: scale(1.1) rotate(4deg);
 }
 
-.chat .divider.divider span {
+/*New Message Divider color change */
+.theme-dark [class*=divider-] span {
     color: #FF69B4 !important;
     display: inline-block;
     vertical-align: middle;
@@ -222,10 +266,34 @@
     transition-property: transform;
 }
 
-.chat .divider.divider span:hover,
-.chat .divider.divider span:focus,
-.chat .divider.divider span:active {
+/*New Message Divider rotate effect */
+.theme-dark [class*=divider-] span:hover,
+.theme-dark [class*=divider-] span:focus,
+.theme-dark [class*=divider-] span:active {
    -webkit-transform: scale(1.1) rotate(4deg);
    transform: scale(1.1) rotate(4deg);
 }
 
+
+/*Discord user card role fix*/
+div[class^="roleCircle-"] {
+  display: none;
+}
+
+div[class^="roleName-"] {
+  margin: 0 4px 0 4px;
+}
+
+li[class^="role-"] {
+  border-radius: 3px;
+  border: 2px solid;
+}
+
+li[class^="role-"]:hover, 
+li[class^="role-"]:focus, 
+li[class^="role-"]:active {
+   -webkit-transform: scale(1.1) rotate(4deg);
+   transform: scale(1.1) rotate(4deg);
+}
+
+li[class^="role-"] { transition: transform 150ms ease-in-out }
